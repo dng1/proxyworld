@@ -1,0 +1,14 @@
+CREATE TABLE `proxy` (
+ `id` INT(11) NOT NULL AUTO_INCREMENT,
+ `ip` VARCHAR(50) NOT NULL COLLATE 'utf8_swedish_ci',
+ `lastcode` INT(11) NOT NULL DEFAULT '0',
+ `ckecks` INT(11) NOT NULL DEFAULT '0',
+ `type` INT(11) NOT NULL DEFAULT '0',
+ `lastcheck` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+ `status` INT(11) NOT NULL DEFAULT '0',
+ PRIMARY KEY (`id`)
+)
+COLLATE='utf8_swedish_ci'
+ENGINE=InnoDB
+ROW_FORMAT=COMPACT
+;
